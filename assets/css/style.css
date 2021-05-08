@@ -1947,7 +1947,7 @@ section {
   text-align: center;
   width: 25%;
   float: left;
-  font-size: 7vmin;
+  font-size: 9vmin;
   font-weight: 900;
 }
 
@@ -1965,6 +1965,11 @@ section {
   color: #daf6ff;
 }
 
+@media (min-width: 600px) {
+  .cd-tg {
+    font-size: 8vmin;
+  }  
+}
 @media (min-width: 768px) {
   .clock-wrapper-target {
     max-width: 600px;
