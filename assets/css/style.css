@@ -1916,3 +1916,64 @@ section {
 .featured-services .title {
   color: #000;
 }
+}
+
+.countdown {
+  width: 100%;
+}
+
+.clock-wrapper-target {
+    width: 100%;
+    max-width: 320px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.time-tg {
+  display: block;
+  width: 100%;
+  color: #e60bb4;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+}
+
+.cd-tg {
+  text-align: center;
+  width: 25%;
+  float: left;
+  font-size: 7vmin;
+  font-weight: 900;
+}
+
+.label-wrapper-target {
+  color: #fff;
+  display: block;
+  width: 100%;
+  font-size: 2.2vmin;
+}
+
+.label-target {
+  width: 25%;
+  text-align: center;
+  float: left;
+  color: #daf6ff;
+}
+
+@media (min-width: 768px) {
+  .clock-wrapper-target {
+    max-width: 600px;
+    margin-top: 50px;
+  }
+  .cd-tg {
+    font-size: 8.5vmin;
+  }
+  .label-wrapper-target {
+    font-size: 1.55vmin;    
+  }
+}
