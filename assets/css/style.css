@@ -492,7 +492,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-logo {
   max-width: 300px;
   margin: 0 auto;
-  width: 20vh;
+  width: 35vh;
 }
 
 #hero .container {
@@ -1921,6 +1921,7 @@ section {
 
 .countdown {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .clock-wrapper-target {
@@ -1978,7 +1979,7 @@ section {
     margin-bottom: 10px;
   }
   .cd-tg {
-    font-size: 8.5vmin;
+    font-size: 7.5vmin;
   }
   .label-wrapper-target {
     font-size: 1.55vmin;    
