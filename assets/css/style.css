@@ -1968,7 +1968,8 @@ section {
 @media (min-width: 768px) {
   .clock-wrapper-target {
     max-width: 600px;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 10px;
   }
   .cd-tg {
     font-size: 8.5vmin;
