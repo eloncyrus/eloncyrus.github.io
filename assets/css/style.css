@@ -26,7 +26,9 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
-
+.pill {
+  margin-top: 20px !important;
+}
 .pill::after {
   content: "";
   width: 100%;
@@ -43,9 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #07fcff;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #07fcff, #e60bb4);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #07fcff, #e60bb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
+  -webkit-mask: unset;
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
@@ -471,7 +471,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 75vh;
+  height: 100vh;
 
   background-size: cover;
   position: relative;
@@ -1881,17 +1881,31 @@ section {
   }
 }
 @media (min-width: 768px) {
+  .pill:after {
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  }  
+  .justify-content-space-between {
+    justify-content: space-between;
+  }
+  #header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    box-shadow: unset;
+  }  
+}
+@media (min-width: 992px) {
+  .pill {
+    margin-top: 0 !important;
+  }  
   .align-d {
     display: flex;
     align-items: center;
   }
-  .justify-content-space-between {
-    justify-content: space-between;
-  }
-}
-
-
-.nav-menu > ul > li > .pill:before {
+  .nav-menu > ul > li > .pill:before {
   display: none !important;
 }
 
