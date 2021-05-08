@@ -1880,6 +1880,10 @@ section {
   .counts .count-box {
     padding: 30px 0 25px 0;
   }
+  #hero {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+  }
 }
 @media (min-width: 768px) {
   .pill:after {
