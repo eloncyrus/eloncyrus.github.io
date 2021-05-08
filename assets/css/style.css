@@ -1985,3 +1985,8 @@ section {
     font-size: 1.55vmin;    
   }
 }
+@media (min-width: 1600px) { 
+  .cd-tg {
+    font-size: 76px;
+  }
+}
