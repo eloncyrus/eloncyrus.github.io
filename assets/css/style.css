@@ -43,9 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #07fcff;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #07fcff, #e60bb4);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #07fcff, #e60bb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
+  -webkit-mask: unset;
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
@@ -1881,6 +1879,10 @@ section {
   }
 }
 @media (min-width: 768px) {
+  .pill:after {
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  }
   .align-d {
     display: flex;
     align-items: center;
