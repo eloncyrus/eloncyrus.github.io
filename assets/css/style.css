@@ -26,7 +26,9 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
-
+.pill {
+  margin-top: 20px !important;
+}
 .pill::after {
   content: "";
   width: 100%;
@@ -1897,6 +1899,9 @@ section {
     width: 100%;
     background: transparent;
     box-shadow: unset;
+  }
+  .pill {
+    margin-top: 0;
   }
 }
 
