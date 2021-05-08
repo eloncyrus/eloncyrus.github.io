@@ -97,6 +97,23 @@
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Buy ON PANCAKESWAP</a>        
       </div>
+
+      <div class="countdown">
+        <div class="clock-wrapper-target">  
+          <div class="time-tg" id="clock">
+            <div id="daystg" class="cd-tg"></div>
+            <div id="hourstg" class="cd-tg">24</div>
+            <div id="minutestg" class="cd-tg">00</div>
+            <div id="secondstg" class="cd-tg">00</div>
+          </div>
+          <div class="label-wrapper-target">
+            <div class="label-target">DAYS</div>
+            <div class="label-target">HOURS</div>
+            <div class="label-target">MINUTES</div>
+            <div class="label-target">SECONDS</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section><!-- End Hero -->  
 
@@ -224,6 +241,25 @@ In all honesty, this only works if we hold. To my fellow dumpers, Go F**k Yourse
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+  <script src="./assets/js/countdown.js"></script>
+
+  <script>
+    var fridayTime = moment("2021-05-08T22:00:00Z", moment.ISO_8601);
+
+    $('#clock').countdown(fridayTime.toDate(), function(event) {
+    var d = event.strftime('%D');
+    var h = event.strftime('%H');
+    var m = event.strftime('%M');
+    var s = event.strftime('%S');
+    
+  	$('#daystg').html(event.strftime('%D'));
+    $('#hourstg').html(event.strftime('%H' ));
+  	$('#minutestg').html(event.strftime('%M'));
+  	$('#secondstg').html(event.strftime('%S'));
+    });
+	</script>
 </body>
 
 </html>
